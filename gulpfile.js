@@ -77,6 +77,6 @@ function watcher () {
 
 module.exports = {
   watch: parallel(browserSync, series(clean, images ,watcher)),
-  build: series(clean, parallel(styles, images)),
+  build: series(clean, parallel(styles, styles, scripts, images)),
   clean
 }
