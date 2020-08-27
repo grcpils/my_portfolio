@@ -134,12 +134,12 @@ function prompter () {
     gitPush('master')
     gitCheckout('dev')
   }))
-  console.log('Publication finished with success!')
+  // console.log('Publication finished with success!')
 }
 
 module.exports = {
   watch: parallel(browserSync, series(clean, images ,watcher)),
-  build: series(clean, parallel(styles, images)),
+  build: series(clean, parallel(styles, styles, scripts, images)),
   publish: series(prompter),
   clean
 }
