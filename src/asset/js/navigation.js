@@ -8,7 +8,3 @@ window.onscroll = function() {
     $('#nav-download').fadeOut()
   }
 };
-
-$(document).ready(function() {
-  $('#nav-download').hide();
-})

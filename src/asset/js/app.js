@@ -1,5 +1,6 @@
 $(document).ready(function() {
   handleLanguage()
+  $('#nav-download').hide();
 });
 
 function handleLanguage() {
