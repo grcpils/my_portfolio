@@ -38,6 +38,15 @@
   &--nav {
     opacity: 0;
     transition: .50s;
+    @media (max-width: 768px) {
+      opacity: 1;
+      display: block !important;
+      text-align: center;
+      margin: 30px 0 0 0;
+      padding: 10px 50px;
+      font-size: 25px;
+      width: 80%;
+    }
   }
   &--nav-view {
     opacity: 1;
