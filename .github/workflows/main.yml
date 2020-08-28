@@ -19,4 +19,3 @@ jobs:
         ftp-server: 163.172.59.103
         ftp-username: pgouereccv
         ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: web/portfolio/
