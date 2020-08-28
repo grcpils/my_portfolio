@@ -1,0 +1,28 @@
+.navigation {
+  z-index: 999;
+  position: fixed;
+  padding: 10px 0;
+  height: 70px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  background-color: white;
+  width: 100%;
+  &__container {
+    @include d-flex-row;
+  }
+  &__menu-list {
+    @include list-row;
+    margin: 5px 40px 0 0;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 100;
+    li {
+      margin: 0 10px;
+      a {
+        color: $color-dark;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

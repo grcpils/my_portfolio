@@ -31,18 +31,6 @@ let path = {
   images: {
     src: ['src/asset/img/*'],
     dest: 'dist/asset/img'
-  },
-  git: {
-    src: [
-      './.gitignore',
-      './src/*',
-      './LICENSE',
-      './package.json',
-      './package-lock.json',
-      './README.md',
-      './index.html'
-      // Add another root files here
-    ]
   }
 }
 
@@ -140,6 +128,5 @@ function prompter () {
 module.exports = {
   watch: parallel(browserSync, series(clean, images ,watcher)),
   build: series(clean, parallel(styles, styles, scripts, images)),
-  publish: series(prompter),
   clean
 }

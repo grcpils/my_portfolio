@@ -1,0 +1,11 @@
+.logo {
+  text-transform: uppercase;
+  color: #31393C;
+  text-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  font-weight: 100;
+  margin: 0;
+  &__accent {
+    font-weight: 700;
+    margin-right: 10px;
+  }
+}

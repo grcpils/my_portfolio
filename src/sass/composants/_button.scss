@@ -1,0 +1,45 @@
+.button {
+  @include d-flex-row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  background-color: $color-dark;
+  padding: 5px 50px;
+  font-size: 20px;
+  color: $color-light;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: .20s;
+  &:hover {
+    color: $color-light;
+    text-decoration: none;
+  }
+  @each $key, $value in $colors {
+    &--#{$key} {
+      background-color: $value;
+      @if ( lightness($value) < 60% ) {
+        color: $color-dark;
+      }
+      &:hover {
+        background-color: darken($value, 10%);
+        @if ( lightness($value) < 60% ) {
+          color: $color-dark;
+        }
+      }
+    }
+  }
+  &--big {
+    padding: 10px 50px;
+    font-size: 25px;
+    width: 80%;
+  }
+  &--nav {
+    opacity: 0;
+    transition: .50s;
+  }
+  &--nav-view {
+    opacity: 1;
+  }
+}
