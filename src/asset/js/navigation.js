@@ -1,3 +1,7 @@
+$(document).ready(function() {
+  $('#nav-download').hide();
+});
+
 let headOffSet = $('#header-download')[0].offsetTop;
 window.onscroll = function() {
   if (window.pageYOffset > headOffSet) {
