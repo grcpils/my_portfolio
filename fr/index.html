@@ -31,14 +31,21 @@
   <nav class="navigation">
     <div class="container navigation__container">
       <a href="#top"><h1 class="logo"><span class="logo__accent">P.</span>Gouerec</h1></a>
-      <ul class="navigation__menu-list">
-        <li class="underline underline-A"><a href="#about-me">About-me</a></li>
-        <li class="underline underline-B"><a href="#skills">Skills</a></li>
-        <li class="underline underline-C"><a href="#experience">Experience</a></li>
-        <li class="underline underline-D"><a href="#education">Education</a></li>
-        <li class="underline underline-E"><a href="#projects">Projects</></li>
-      </ul>
-      <a id="nav-download" class="button button--primary button--nav" href="#download-cv">Download CV</a>
+      <div class="toggler d-flex d-md-none">
+        <div class="toggler__bar top"></div>
+        <div class="toggler__bar middle"></div>
+        <div class="toggler__bar bottom"></div>
+      </div>
+      <div class="navigation__collapse">
+        <ul class="navigation__menu-list">
+          <li class="underline underline-A menu-item"><a href="#about-me">About-me</a></li>
+          <li class="underline underline-B menu-item"><a href="#skills">Skills</a></li>
+          <li class="underline underline-C menu-item"><a href="#experience">Experience</a></li>
+          <li class="underline underline-D menu-item"><a href="#education">Education</a></li>
+          <li class="underline underline-E menu-item"><a href="#projects">Projects</></li>
+        </ul>
+        <a id="nav-download" class="button button--primary button--nav" href="#download-cv">Download CV</a>
+      </div>
     </div>
   </nav>
 
