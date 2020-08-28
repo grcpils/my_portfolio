@@ -16,6 +16,6 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
-        ftp-server: 163.172.59.103
+        ftp-server: ftp://163.172.59.103/web/portfolio/
         ftp-username: pgouereccv
         ftp-password: ${{ secrets.FTP_PASSWORD }}
