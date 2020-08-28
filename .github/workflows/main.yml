@@ -7,7 +7,7 @@ on:
 jobs:
 
   FTP-Deploy-Action:
-    name: FTP-Deploy-Action
+    name: FTP-Deploy
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2.1.0
@@ -19,4 +19,4 @@ jobs:
         ftp-server: 163.172.59.103
         ftp-username: pgouereccv
         ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./web/portfolio/ 
+        local-dir: web/portfolio/
