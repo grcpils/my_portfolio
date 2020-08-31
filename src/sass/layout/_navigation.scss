@@ -1,5 +1,6 @@
 .navigation {
-  z-index: 500;
+  position: relative;
+  z-index: 100;
   position: fixed;
   padding: 10px 0;
   height: 70px;
@@ -20,7 +21,6 @@
     li {
       margin: 0 10px;
       a {
-        color: $color-dark;
         &:hover {
           text-decoration: none;
         }

@@ -1,0 +1,15 @@
+#about-me {
+  .about-picture {
+    @include box-shadow;
+    border-radius: 10px;
+    background-color: $color-dark;
+    height: 100%;
+    width: auto;
+    margin: 0 50px;
+    background-image: url('https://cdn.gouerec.fr/portfolio/about-me.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+// https://cdn.gouerec.fr/portfolio/about-me.jpg

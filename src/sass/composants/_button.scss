@@ -51,4 +51,25 @@
   &--nav-view {
     opacity: 1;
   }
+  &--theme {
+    position: absolute;
+    cursor: pointer;
+    z-index: 150;
+    left: 25px;
+    top: 15px;
+    margin: 0;
+    padding: 10px;
+    &.light {
+      color: $color-light;
+      background-color: $color-dark;
+    }
+    &.dark {
+      color: $color-dark;
+      background-color: $color-light;
+    }
+    @media (max-width: 768px) {
+      left: auto;
+      right: 75px;
+    }
+  }
 }

@@ -4,6 +4,7 @@
 
 // Base
 @import './base/body';
+@import './base/theme';
 
 // Composants
 @import './composants/logo';
@@ -11,9 +12,12 @@
 @import './composants/button';
 @import './composants/title';
 @import './composants/toggler';
+@import './composants/details';
+@import './composants/language';
 
 // Layout
 @import './layout/navigation';
 @import './layout/header';
 @import './layout/section';
 @import './layout/footer';
+@import './layout/aboutme';
