@@ -18,6 +18,11 @@
     font-size: 26px;
     text-transform: uppercase;
     font-weight: 100;
+    @media (max-width: 992px) {
+      padding: 0 0 0 20px;
+      margin: 5px 0 0 0;
+      font-size: 22px;
+    }
     li {
       margin: 0 10px;
       a {
