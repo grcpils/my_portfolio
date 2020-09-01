@@ -33,12 +33,25 @@
   &--big {
     padding: 10px 50px;
     font-size: 25px;
-    width: 80%;
+    width: auto;
+    @media (max-width: 992px) {
+      padding: 10px 30px;
+    }
   }
   &--nav {
+    position: absolute;
+    right: 20px;
+    top: 15px;
     opacity: 0;
     transition: .50s;
+    @media (max-width: 1200px) {
+      padding: 5px 20px;
+    }
+    @media (max-width: 992px) {
+      padding: 10px 10px;
+    }
     @media (max-width: 768px) {
+      position: relative;
       opacity: 1;
       display: block !important;
       text-align: center;
