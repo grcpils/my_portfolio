@@ -51,14 +51,9 @@
       padding: 10px 10px;
     }
     @media (max-width: 768px) {
-      position: relative;
       opacity: 1;
-      display: block !important;
+      right: 125px;
       text-align: center;
-      margin: 30px 0 0 0;
-      padding: 10px 50px;
-      font-size: 25px;
-      width: 80%;
     }
   }
   &--nav-view {

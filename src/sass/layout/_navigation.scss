@@ -49,6 +49,7 @@
       top: 0;
       ul {
         @include d-flex-col-center;
+        padding: 0;
         li {
           margin: 10px 0;
           font-size: 40px;
