@@ -22,22 +22,5 @@ $themes: (
     a {
       color: map-get($map: $value, $key: color);
     }
-    .navigation {
-      background-color: map-get($map: $value, $key: background);
-    }
-    .background {
-      background-color: map-get($map: $value, $key: background-accent);
-    }
-    .toggler__bar {
-      background-color: map-get($map: $value, $key: color);
-    }
-    .languages {
-      .progressbar.doted i {
-        color: map-get($map: $value, $key: color-inverse)
-      }
-      .progressbar.doted .fill {
-        color: map-get($map: $value, $key: color)
-      }
-    }
   }
 }

@@ -4,5 +4,7 @@ section {
 }
 
 .background {
-  background-color: $color-light;
+  @include themify($themes) {
+    background-color: themed(background-accent);
+  }
 }

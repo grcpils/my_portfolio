@@ -13,7 +13,9 @@
     border-radius: 10px;
     height: 4px;
     width: 100%;
-    background-color: $color-dark;
+    @include themify($themes) {
+      background-color: themed(color);
+    }
     transition: all .20s;
   }
   &.active {
