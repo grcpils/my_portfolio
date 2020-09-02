@@ -70,10 +70,16 @@
     &.light {
       color: $color-light;
       background-color: $color-dark;
+      &:hover {
+        background-color: lighten($color: $color-dark, $amount: 10%)
+      }
     }
     &.dark {
       color: $color-dark;
       background-color: $color-light;
+      &:hover {
+        background-color: darken($color: $color-light, $amount: 10%)
+      }
     }
     @media (max-width: 768px) {
       left: auto;

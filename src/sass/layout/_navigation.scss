@@ -5,9 +5,11 @@
   padding: 10px 0;
   height: 70px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-  background-color: white;
   width: 100%;
   transition: .5s;
+  @include themify($themes) {
+    background-color: themed(background);
+  }
   &__container {
     @include d-flex-row;
   }
