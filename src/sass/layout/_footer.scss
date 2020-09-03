@@ -1,4 +1,12 @@
 .footer {
   background-color: $color-dark;
-  height: 300px;
+  min-height: 75px;
+  color: $color-light;
+  &__text {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    padding: 22.5px 10px;
+  }
 }
