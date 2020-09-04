@@ -20,8 +20,421 @@
   <meta property="twitter:title" content="P.GOUEREC | My portfolio">
   <meta property="twitter:description" content="Presentation of my career and my projects">
   <meta property="twitter:image" content="https://cdn.gouerec.fr/portfolio/og-en.png">
+
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/edf88d28ae.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../dist/asset/css/styles.min.css">
+
 </head>
-<body>
+<body class="theme-light">
   
+  <nav class="navigation">
+    <div class="container navigation__container">
+      <div class="button button--theme light"><i class="far fa-moon"></i></div>
+      <a class="button button--lang custom-tooltip" href="../fr/index.html" data-toggle="tooltip" data-placement="bottom" title="Voir en Français">FR</a>
+      <a href="#top"><h1 class="logo"><span class="logo__accent">P.</span>G<span class="minus-hide">ouerec</span></h1></a>
+      <div class="toggler d-flex d-md-none">
+        <div class="toggler__bar top"></div>
+        <div class="toggler__bar middle"></div>
+        <div class="toggler__bar bottom"></div>
+      </div>
+      <div class="navigation__collapse">
+        <ul class="navigation__menu-list">
+          <li class="underline underline-A menu-item"><a href="#about-me">About-me</a></li>
+          <li class="underline underline-B menu-item"><a href="#skills">Skills</a></li>
+          <li class="underline underline-C menu-item"><a href="#experience">Experience</a></li>
+          <li class="underline underline-D menu-item"><a href="#education">Education</a></li>
+          <li class="underline underline-E menu-item"><a href="#projects">Projects</a></li>
+        </ul>
+        <a id="nav-download" class="button button--primary button--nav" target="_blank" href="https://cdn.gouerec.fr/portfolio/CV%20%E2%80%93%20Pierrick%20Gouerec.pdf"><span class="d-none d-sm-none d-md-none d-lg-inline d-xl-inline">Download Resume</span><i class="d-inline d-sm-inline d-md-inline d-lg-none d-xl-none fas fa-download"></i></a>
+      </div>
+    </div>
+  </nav>
+  
+  <header id="top" class="header">
+    <div class="container h-100">
+      <div class="row justify-content-center h-100">
+        <div class="col-md-4">
+          <div class="header__container">
+            <img class="header__picture" src="https://cdn.gouerec.fr/portfolio/pgouerec_portrait.jpg">
+            <h2 class="logo no-z-index"><span class="logo__accent">Pierrick</span>Gouerec</h2>
+            <h3>Epitech student</h3>
+            <a id="header-download" class="button button--big button--primary" target="_blank" href="https://cdn.gouerec.fr/portfolio/CV%20%E2%80%93%20Pierrick%20Gouerec.pdf">Download Resume</a>
+            <i id="go-down" class="d-none d-md-block fas fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <section id="about-me" class="background pt-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <h3 class="title underline underline--title underline--nohover underline-A">About-me</h3>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6 col-lg-5">
+          <div class="about-picture"></div>
+        </div>
+        <div class="col-md-6 col-lg-7">
+          <ul class="details">
+            <li>
+              <span class="details__tag">Full name</span>
+              <span class="details__value">Pierrick Gouerec</span>
+            </li>
+            <li>
+              <span class="details__tag">D.O.B</span>
+              <span class="details__value">16 july 1998</span>
+            </li>
+            <li>
+              <span class="details__tag">Location</span>
+              <span class="details__value">Lille, France, 59800</span>
+            </li>
+            <li>
+              <span class="details__tag">E-mail</span>
+              <span class="details__value">pierrick.gouerec@gmail.com</span>
+            </li>
+            <li>
+              <span class="details__tag">Phone</span>
+              <span class="details__value">+33.6.86.58.87.87</span>
+            </li>
+          </ul>
+          <ul class="languages">
+            <li>
+              <span class="label">French</span>
+              <div class="progressbar doted" data-value="9">
+                <i class="fas fa-circle fill"></i>
+                <i class="fas fa-circle fill"></i>
+                <i class="fas fa-circle fill"></i>
+                <i class="fas fa-circle fill"></i>
+                <i class="fas fa-circle fill"></i>
+                <i class="fas fa-circle fill"></i>
+                <i class="fas fa-circle fill"></i>
+                <i class="fas fa-circle fill"></i>
+                <i class="fas fa-circle fill"></i>
+                <i class="fas fa-circle"></i>
+              </div>
+              <span class="level">Native</span>
+            </li>
+            <li>
+              <span class="label">English</span>
+              <div class="progressbar doted" data-value="5">
+                <i class="fas fa-circle fill"></i>
+                <i class="fas fa-circle fill"></i>
+                <i class="fas fa-circle fill"></i>
+                <i class="fas fa-circle fill"></i>
+                <i class="fas fa-circle fill"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+              </div>
+              <span class="level">Fluent</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="skills" class="pt-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <h3 class="title underline underline--title underline--nohover underline-B">Skills</h3>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-6">
+          
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              
+              <div class="skill-card">
+                <div class="progressbar circle stroke-B" data-value="20"></div>
+                <div class="skill-header">
+                  <h3 class="skill-header__title circle">C</h3>
+                </div>
+              </div>
+              
+            </div>
+            <div class="col-lg-6 col-12">
+              
+              <div class="skill-card">
+                <div class="progressbar circle stroke-E" data-value="45"></div>
+                <div class="skill-header">
+                  <h3 class="skill-header__title circle">PHP/MYSQL</h3>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+          <div class="skill-card">
+            <div class="skill-header">
+              <h3 class="skill-header__title">Symfony 4</h3>
+              <span class="skill-header__percent">40%</span>
+            </div>
+            <div class="progressbar line color-A perc-40" data-value="40"></div>
+          </div>
+          
+        </div>
+        <div class="col-md-6">
+          
+          <div class="skill-card">
+            <div class="skill-header">
+              <h3 class="skill-header__title">Python</h3>
+              <span class="skill-header__percent">25%</span>
+            </div>
+            <div class="progressbar line color-C perc-25" data-value="25"></div>
+          </div>
+          
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              
+              <div class="skill-card">
+                <div class="progressbar circle stroke-D" data-value="85"></div>
+                <div class="skill-header">
+                  <h3 class="skill-header__title circle">HTML/CSS</h3>
+                </div>
+              </div>
+              
+            </div>
+            <div class="col-lg-6 col-12">
+              
+              <div class="skill-card">
+                <div class="progressbar circle stroke-F" data-value="15"></div>
+                <div class="skill-header">
+                  <h3 class="skill-header__title circle">Linux</h3>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="experience" class="background pt-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <h3 class="title underline underline--title underline--nohover underline-C">Experience</h3>
+      </div>
+      
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-3">
+          <div class="timeline__date">Jul - Dec 2020</div>
+        </div>
+        <div class="col-md-7 mt-2 mt-md-0">
+          <div class="timeline__card">
+            <div class="timeline__card__header">
+              <h4>Stagiaire</h4>
+              <span class="contracts">Contrat de stage | 6 Mois</span>
+            </div>
+            <h5>Adfinitas</h5>
+            <ul class="timeline__card__list">
+              <li class="dot-E">Développement de façade web en HTML/CSS et JavaScript avec Bootstrap et jQuery</li>
+              <li class="dot-E">Développement de campagne courriel en HTML/CSS avec Foundation For Email 2</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-3">
+          <div class="timeline__date">Feb - Aug 2019</div>
+        </div>
+        <div class="col-md-7 mt-2 mt-md-0">
+          <div class="timeline__card">
+            <div class="timeline__card__header">
+              <h4>TECHNICIEN DE PROXIMITE</h4>
+              <span class="contracts">CDD | 7 Mois</span>
+            </div>
+            <h5>Crédit Agricole Technologie et Services</h5>
+            <ul class="timeline__card__list">
+              <li class="dot-A">Maintenance et installation de matériels pour les salariés de l’entreprise.</li>
+              <li class="dot-A">Participation à divers projets d’innovation sur les sites du Crédit Agricole Technologie et Services</li>
+              <li class="dot-A">Aide à la mise en place de nouveaux sites en France (Lyon, Montpellier)</li>
+              <li class="dot-A">Développement d’une application de gestion d’incidents et de demandes en HTML/CSS, PHP et JavaScript (jQuery)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-3">
+          <div class="timeline__date">Feb - Aug 2019</div>
+        </div>
+        <div class="col-md-7 mt-2 mt-md-0">
+          <div class="timeline__card">
+            <div class="timeline__card__header">
+              <h4>TECHNICIEN DE PROXIMITE</h4>
+              <span class="contracts">Alternance | 2 ans</span>
+            </div>
+            <h5>Crédit Agricole Technologie et Services</h5>
+            <ul class="timeline__card__list">
+              <li class="dot-B">Maintenance et installation de matériels pour les salariés de l’entreprise.</li>
+              <li class="dot-B">Participation à divers projets d’innovation sur les sites du Crédit Agricole Technologie et Services</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  
+  <section id="education" class="pt-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <h3 class="title underline underline--title underline--nohover underline-D">Education</h3>
+      </div>
+      
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-3">
+          <div class="timeline__date">2019 - 2024</div>
+        </div>
+        <div class="col-md-7 mt-2 mt-md-0">
+          <div class="timeline__card">
+            <div class="timeline__card__header">
+              <h4>EPITECH LILLE</h4>
+            </div>
+            <h5>Expert en Technologies de l’Information (2nd année)</h5>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-3">
+          <div class="timeline__date">Jan - 2019</div>
+        </div>
+        <div class="col-md-7 mt-2 mt-md-0">
+          <div class="timeline__card">
+            <div class="timeline__card__header">
+              <h4>MOOC OPENCLASSROOM</h4>
+            </div>
+            <h5>Créer votre site en HTML5 et CSS3</h5>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-3">
+          <div class="timeline__date">Jan - 2019</div>
+        </div>
+        <div class="col-md-7 mt-2 mt-md-0">
+          <div class="timeline__card">
+            <div class="timeline__card__header">
+              <h4>MOOC OPENCLASSROOM</h4>
+            </div>
+            <h5>Concevez votre site web en PHP et MySQL</h5>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center mt-4">
+        <div class="col-md-3">
+          <div class="timeline__date">2016 - 2018</div>
+        </div>
+        <div class="col-md-7 mt-2 mt-md-0">
+          <div class="timeline__card">
+            <div class="timeline__card__header">
+              <h4>BAC PROFESSIONNEL</h4>
+            </div>
+            <h5>Système électronique et Numérique Télécommunications et Réseaux</h5>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+  
+  <section id="projects" class="background pt-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <h3 class="title underline underline--title underline--nohover underline-E">Projects</h3>
+      </div>
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-4 mt-3 mt-md-0">
+          <a class="project-card" data-toggle="modal" data-target="#minishell-modal" data-img="https://cdn.gouerec.fr/portfolio/minishell.jpg">
+            <div class="project-card__title">
+              <h4>Minishell 2</h4>
+              <small>Shell développé en C</small>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 mt-3 mt-md-0">
+          <div class="project-card" data-toggle="modal" data-target="#portfolio-modal" data-img="https://cdn.gouerec.fr/portfolio/portfolio.jpg">
+            <div class="project-card__title">
+              <h4>Portfolio</h4>
+              <small>Mon portfolio web</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="footer__text">Créé et développé par Pierrick Gouerec – Tout droits réservé</div>
+  </footer>
+
+
+  <!-- MODAL MINISHELL 2 -->
+  <div class="modal fade" id="minishell-modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-custom">
+        <button type="button" class="modal-custom__close close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><i class="fas fa-times"></i></span>
+        </button>
+        <div class="modal-body">
+          <h3>Minishell 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="row">
+            <div class="col-md-6 mt-2 mt-md-0">
+              <a class="button button--icon button--github" target="_blank" href="https://github.com/Pgouerec/minishell2">
+                <i class="fab fa-github"></i>
+                Github
+              </a>
+            </div>
+            <div class="col-md-6 mt-2 mt-md-0">
+              <a class="button button--icon button--download d-none d-md-flex" target="_blank" href="https://github.com/Pgouerec/minishell2/archive/master.zip">
+                <i class="fas fa-download"></i>
+                Download
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END MODAL MINISHELL 2 -->
+
+    <!-- MODAL PORTFOLIO -->
+    <div class="modal fade" id="portfolio-modal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-custom">
+          <button type="button" class="modal-custom__close close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fas fa-times"></i></span>
+          </button>
+          <div class="modal-body">
+            <h3>Portfolio</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="row">
+              <div class="col-md-6 mt-2 mt-md-0">
+                <a class="button button--icon button--github" target="_blank" href="https://github.com/Pgouerec/my_portfolio">
+                  <i class="fab fa-github"></i>
+                  Github
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END MODAL PORTFOLIO -->
+  
+  <script src="../dist/asset/js/scripts.min.js"></script>
 </body>
 </html>

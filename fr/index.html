@@ -23,6 +23,7 @@
   
   <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
   <script src="https://kit.fontawesome.com/edf88d28ae.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../dist/asset/css/styles.min.css">
   
 </head>
@@ -31,7 +32,8 @@
   <nav class="navigation">
     <div class="container navigation__container">
       <div class="button button--theme light"><i class="far fa-moon"></i></div>
-      <a href="#top"><h1 class="logo"><span class="logo__accent">P.</span>Gouerec</h1></a>
+      <a class="button button--lang custom-tooltip" href="../en/index.html" data-toggle="tooltip" data-placement="bottom" title="View in English">EN</a>
+      <a href="#top"><h1 class="logo"><span class="logo__accent">P.</span>G<span class="minus-hide">ouerec</span></h1></a>
       <div class="toggler d-flex d-md-none">
         <div class="toggler__bar top"></div>
         <div class="toggler__bar middle"></div>
@@ -39,13 +41,13 @@
       </div>
       <div class="navigation__collapse">
         <ul class="navigation__menu-list">
-          <li class="underline underline-A menu-item"><a href="#about-me">About-me</a></li>
-          <li class="underline underline-B menu-item"><a href="#skills">Skills</a></li>
-          <li class="underline underline-C menu-item"><a href="#experience">Experience</a></li>
+          <li class="underline underline-A menu-item"><a href="#about-me">A propos</a></li>
+          <li class="underline underline-B menu-item"><a href="#skills">Compétences</a></li>
+          <li class="underline underline-C menu-item"><a href="#experience">Expériences</a></li>
           <li class="underline underline-D menu-item"><a href="#education">Education</a></li>
-          <li class="underline underline-E menu-item"><a href="#projects">Projects</a></li>
+          <li class="underline underline-E menu-item"><a href="#projects">Projets</a></li>
         </ul>
-        <a id="nav-download" class="button button--primary button--nav" target="_blank" href="https://cdn.gouerec.fr/portfolio/CV%20%E2%80%93%20Pierrick%20Gouerec.pdf"><span class="d-none d-sm-none d-md-none d-lg-inline d-xl-inline">Download Resume</span><i class="d-inline d-sm-inline d-md-inline d-lg-none d-xl-none fas fa-download"></i></a>
+        <a id="nav-download" class="button button--primary button--nav" target="_blank" href="https://cdn.gouerec.fr/portfolio/CV%20%E2%80%93%20Pierrick%20Gouerec.pdf"><span class="d-none d-sm-none d-md-none d-lg-inline d-xl-inline">Télécharger le CV</span><i class="d-inline d-sm-inline d-md-inline d-lg-none d-xl-none fas fa-download"></i></a>
       </div>
     </div>
   </nav>
@@ -57,8 +59,8 @@
           <div class="header__container">
             <img class="header__picture" src="https://cdn.gouerec.fr/portfolio/pgouerec_portrait.jpg">
             <h2 class="logo no-z-index"><span class="logo__accent">Pierrick</span>Gouerec</h2>
-            <h3>Epitech student</h3>
-            <a id="header-download" class="button button--big button--primary" target="_blank" href="https://cdn.gouerec.fr/portfolio/CV%20%E2%80%93%20Pierrick%20Gouerec.pdf">Download Resume</a>
+            <h3>Etudiant Epitech</h3>
+            <a id="header-download" class="button button--big button--primary" target="_blank" href="https://cdn.gouerec.fr/portfolio/CV%20%E2%80%93%20Pierrick%20Gouerec.pdf">Télécharger le CV</a>
             <i id="go-down" class="d-none d-md-block fas fa-chevron-down"></i>
           </div>
         </div>
@@ -69,7 +71,7 @@
   <section id="about-me" class="background pt-4">
     <div class="container">
       <div class="row justify-content-center">
-        <h3 class="title underline underline--title underline--nohover underline-A">About-me</h3>
+        <h3 class="title underline underline--title underline--nohover underline-A">A Propos</h3>
       </div>
       <div class="row mt-5">
         <div class="col-md-6 col-lg-5">
@@ -78,29 +80,29 @@
         <div class="col-md-6 col-lg-7">
           <ul class="details">
             <li>
-              <span class="details__tag">Full name</span>
+              <span class="details__tag">Nom Complet</span>
               <span class="details__value">Pierrick Gouerec</span>
             </li>
             <li>
-              <span class="details__tag">D.O.B</span>
-              <span class="details__value">16 july 1998</span>
+              <span class="details__tag">Date de naissance</span>
+              <span class="details__value">16 Juillet 1998</span>
             </li>
             <li>
-              <span class="details__tag">Location</span>
+              <span class="details__tag">Adresse</span>
               <span class="details__value">Lille, France, 59800</span>
             </li>
             <li>
-              <span class="details__tag">E-mail</span>
+              <span class="details__tag">Courriel</span>
               <span class="details__value">pierrick.gouerec@gmail.com</span>
             </li>
             <li>
-              <span class="details__tag">Phone</span>
+              <span class="details__tag">Téléphone</span>
               <span class="details__value">+33.6.86.58.87.87</span>
             </li>
           </ul>
           <ul class="languages">
             <li>
-              <span class="label">French</span>
+              <span class="label">Français</span>
               <div class="progressbar doted" data-value="9">
                 <i class="fas fa-circle fill"></i>
                 <i class="fas fa-circle fill"></i>
@@ -113,10 +115,10 @@
                 <i class="fas fa-circle fill"></i>
                 <i class="fas fa-circle"></i>
               </div>
-              <span class="level">Native</span>
+              <span class="level">Natif</span>
             </li>
             <li>
-              <span class="label">English</span>
+              <span class="label">Anglais</span>
               <div class="progressbar doted" data-value="5">
                 <i class="fas fa-circle fill"></i>
                 <i class="fas fa-circle fill"></i>
@@ -129,7 +131,7 @@
                 <i class="fas fa-circle"></i>
                 <i class="fas fa-circle"></i>
               </div>
-              <span class="level">Fluent</span>
+              <span class="level">Courant</span>
             </li>
           </ul>
         </div>
@@ -140,7 +142,7 @@
   <section id="skills" class="pt-4">
     <div class="container">
       <div class="row justify-content-center">
-        <h3 class="title underline underline--title underline--nohover underline-B">Skills</h3>
+        <h3 class="title underline underline--title underline--nohover underline-B">Compétences</h3>
       </div>
       <div class="row mt-5">
         <div class="col-md-6">
@@ -218,12 +220,12 @@
   <section id="experience" class="background pt-4">
     <div class="container">
       <div class="row justify-content-center">
-        <h3 class="title underline underline--title underline--nohover underline-C">Experience</h3>
+        <h3 class="title underline underline--title underline--nohover underline-C">Expériences</h3>
       </div>
       
       <div class="row justify-content-center mt-4">
         <div class="col-md-3">
-          <div class="timeline__date">Jul - Dec 2020</div>
+          <div class="timeline__date">Jul - Déc 2020</div>
         </div>
         <div class="col-md-7 mt-2 mt-md-0">
           <div class="timeline__card">
@@ -242,7 +244,7 @@
       
       <div class="row justify-content-center mt-4">
         <div class="col-md-3">
-          <div class="timeline__date">Feb - Aug 2019</div>
+          <div class="timeline__date">Fév - Août 2019</div>
         </div>
         <div class="col-md-7 mt-2 mt-md-0">
           <div class="timeline__card">
@@ -263,7 +265,7 @@
       
       <div class="row justify-content-center mt-4">
         <div class="col-md-3">
-          <div class="timeline__date">Feb - Aug 2019</div>
+          <div class="timeline__date">Fév - Août 2019</div>
         </div>
         <div class="col-md-7 mt-2 mt-md-0">
           <div class="timeline__card">
@@ -286,7 +288,7 @@
   <section id="education" class="pt-4">
     <div class="container">
       <div class="row justify-content-center">
-        <h3 class="title underline underline--title underline--nohover underline-D">Education</h3>
+        <h3 class="title underline underline--title underline--nohover underline-D">Educations</h3>
       </div>
       
       <div class="row justify-content-center mt-4">
@@ -305,7 +307,7 @@
       
       <div class="row justify-content-center mt-4">
         <div class="col-md-3">
-          <div class="timeline__date">Jan - 2019</div>
+          <div class="timeline__date">Janvier - 2019</div>
         </div>
         <div class="col-md-7 mt-2 mt-md-0">
           <div class="timeline__card">
@@ -319,7 +321,7 @@
       
       <div class="row justify-content-center mt-4">
         <div class="col-md-3">
-          <div class="timeline__date">Jan - 2019</div>
+          <div class="timeline__date">Janvier - 2019</div>
         </div>
         <div class="col-md-7 mt-2 mt-md-0">
           <div class="timeline__card">
@@ -351,7 +353,7 @@
   <section id="projects" class="background pt-4">
     <div class="container">
       <div class="row justify-content-center">
-        <h3 class="title underline underline--title underline--nohover underline-E">Projects</h3>
+        <h3 class="title underline underline--title underline--nohover underline-E">Projets</h3>
       </div>
       <div class="row justify-content-center mt-5">
         <div class="col-md-4 mt-3 mt-md-0">
