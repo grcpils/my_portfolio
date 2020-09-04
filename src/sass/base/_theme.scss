@@ -19,8 +19,5 @@ $themes: (
   .theme-#{$key} {
     color: map-get($map: $value, $key: color);
     background-color: map-get($map: $value, $key: background);
-    a {
-      color: map-get($map: $value, $key: color);
-    }
   }
 }

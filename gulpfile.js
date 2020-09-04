@@ -15,6 +15,7 @@ let path = {
   style: {
     src: [
       'node_modules/bootstrap/dist/css/bootstrap.min.css',
+      'src/asset/css/*.css',
       'src/sass/*.scss',
       'src/sass/**/*.scss'
     ],

@@ -86,4 +86,25 @@
       right: 75px;
     }
   }
+  &--icon {
+    i {
+      margin-right: 10px;
+    }
+  }
+  &--github {
+    background-color: #24292e;
+    color: #f6f8fa;
+    &:hover {
+      background-color: lighten($color: #24292e, $amount: 10%);
+      color: #f6f8fa;
+    }
+  }
+  &--download {
+    background-color: map-get($map: $colors, $key: E);
+    color: #f6f8fa;
+    &:hover {
+      background-color: darken($color:  map-get($map: $colors, $key: E), $amount: 10%);
+      color: #f6f8fa;
+    }
+  }
 }
