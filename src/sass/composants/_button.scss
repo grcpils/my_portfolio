@@ -51,13 +51,13 @@
       padding: 10px 10px;
     }
     @media (max-width: 768px) {
-      opacity: 1;
-      right: 125px;
+      opacity: 0;
+      right: 175px;
       text-align: center;
     }
   }
   &--nav-view {
-    opacity: 1;
+    opacity: 1 !important;
   }
   &--theme {
     position: absolute;
@@ -84,6 +84,25 @@
     @media (max-width: 768px) {
       left: auto;
       right: 75px;
+    }
+  }
+  &--lang {
+    position: absolute;
+    cursor: pointer;
+    z-index: 150;
+    left: 75px;
+    top: 15px;
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    @media (max-width: 768px) {
+      left: auto;
+      right: 125px;
+    }
+    &:hover {
+      background-color: lighten($color: $color-dark, $amount: 10%)
     }
   }
   &--icon {
