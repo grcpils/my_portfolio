@@ -20,4 +20,14 @@
       }
     }
   }
+  p {
+    font-size: 18px;
+    kbd {
+      font-size: 14px;
+      @include themify($themes) {
+        background-color: themed(shadow);
+        color: themed(color-inverse)
+      }
+    }
+  }
 }
