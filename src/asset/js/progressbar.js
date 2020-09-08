@@ -11,10 +11,10 @@ $('.progressbar.circle').each(function() {
   percent_text.classList.add('circle-label')
   percent_text.textContent = value + '%'
   circleA.setAttribute('cx',70);
-	circleA.setAttribute('cy',70);
+  circleA.setAttribute('cy',70);
   circleA.setAttribute('r',70);
   circleB.setAttribute('cx',70);
-	circleB.setAttribute('cy',70);
+  circleB.setAttribute('cy',70);
   circleB.setAttribute('r',70);
   circleB.style.strokeDashoffset = 439.82 - (439.82 * value) / 100
   this.appendChild(svg)
@@ -25,5 +25,4 @@ $('.progressbar.circle').each(function() {
 
 $('.progressbar.line').each(function() {
   var value = this.dataset['value']
-  
 })

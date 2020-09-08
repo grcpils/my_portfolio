@@ -21,14 +21,14 @@ $('.toggler').click(function() {
     $('.toggler').removeClass('active');
     $('.navigation').removeClass('collapsed')
     $('.navigation__collapse').removeClass('collapsed')
-    $('body').css('overflow-y', 'auto');
-    $('.mobile-wrapper').css('overflow-y', 'auto');
+    $('body').removeClass('overflow-hidden')
+    $('.mobile-wrapper').removeClass('overflow-hidden')
   } else {
     $('.toggler').addClass('active');
     $('.navigation__collapse').addClass('collapsed')
     $('.navigation').addClass('collapsed')
-    $('body').css('overflow-y', 'hidden');
-    $('.mobile-wrapper').css('overflow-y', 'hidden');
+    $('body').addClass('overflow-hidden')
+    $('.mobile-wrapper').addClass('overflow-hidden')
   }
 });
 
@@ -37,7 +37,7 @@ $('.menu-item').each(function() {
     $('.toggler').removeClass('active');
     $('.navigation').removeClass('collapsed')
     $('.navigation__collapse').removeClass('collapsed')
-    $('body').css('overflow-y', 'auto');
-    $('.mobile-wrapper').css('overflow-y', 'auto');
+    $('body').removeClass('overflow-hidden')
+    $('.mobile-wrapper').removeClass('overflow-hidden')
   })
 })
