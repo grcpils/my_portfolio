@@ -2,6 +2,7 @@
   @include d-flex-row;
   justify-content: center;
   align-items: center;
+  border: none;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .2);
   background-color: $color-dark;
@@ -30,6 +31,18 @@
       }
     }
   }
+  &--show-more {
+    box-shadow: none;
+    @include themify($themes) {
+      background-color: themed(background-accent);
+      color: themed(color)
+    }
+    &:hover {
+      @include themify($themes) {
+        background-color: darken(themed(background-accent), 5%);
+      }
+    }
+  }
   &--big {
     padding: 10px 50px;
     font-size: 25px;
@@ -39,6 +52,7 @@
     }
   }
   &--nav {
+    z-index: 500;
     position: absolute;
     right: 20px;
     top: 15px;
