@@ -1,11 +1,8 @@
-name: CI
-
+name: CI - master
 on:
   push:
     branches: [ master ]
-
 jobs:
-
   FTP-Deploy-Action:
     name: FTP-Deploy
     runs-on: ubuntu-latest
@@ -16,6 +13,25 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
-        ftp-server: ftp://163.172.59.103/web/portfolio/
+        ftp-server: ftp://163.172.59.103/web/
+        ftp-username: pgouereccv
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
+
+name: CI - recette
+on:
+  push:
+    branches: [ recette ]
+jobs:
+  FTP-Deploy-Action:
+    name: FTP-Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.1.0
+      with:
+        fetch-depth: 2
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      with:
+        ftp-server: ftp://163.172.59.103/web/recette/
         ftp-username: pgouereccv
         ftp-password: ${{ secrets.FTP_PASSWORD }}
