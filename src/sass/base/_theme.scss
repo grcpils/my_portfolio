@@ -5,6 +5,7 @@ $themes: (
     background: white,
     background-accent: $color-light,
     shadow: $color-dark,
+    box-shadow: rgba(0,0,0,.2),
   ),
   dark: (
     color: $color-light,
@@ -12,6 +13,7 @@ $themes: (
     background: darken($color-dark, 10%),
     background-accent: $color-dark,
     shadow: $color-light,
+    box-shadow: rgba(0,0,0,.5),
   ),
 );
 

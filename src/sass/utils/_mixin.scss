@@ -33,7 +33,9 @@
 }
 
 @mixin box-shadow {
-  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  @include themify($themes) {
+    box-shadow: 0 0 10px themed(box-shadow);
+  }
 }
 
 @mixin themify($themes: $themes) {
