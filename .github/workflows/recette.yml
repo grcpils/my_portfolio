@@ -13,6 +13,6 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
-        ftp-server: ftp://ftp.ysjg2788.odns.fr/recette/
-        ftp-username: admin@cv.gouerec.fr
+        ftp-server: ${{ secrets.FTP_ADDRESS_RCT }}
+        ftp-username: ${{ secrets.FTP_ID }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
