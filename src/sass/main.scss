@@ -6,20 +6,21 @@
 @import './base/body';
 @import './base/theme';
 
-// Composants
-@import './composants/logo';
-@import './composants/underline';
-@import './composants/button';
-@import './composants/title';
-@import './composants/toggler';
-@import './composants/details';
-@import './composants/language';
-@import './composants/skill-card';
-@import './composants/progressbar';
-@import './composants/timeline';
-@import './composants/project-card';
-@import './composants/modal';
-@import './composants/alert';
+// components
+@import './components/logo';
+@import './components/underline';
+@import './components/button';
+@import './components/title';
+@import './components/toggler';
+@import './components/details';
+@import './components/language';
+@import './components/skill-card';
+@import './components/progressbar';
+@import './components/timeline';
+@import './components/project-card';
+@import './components/modal';
+@import './components/alert';
+@import './components/socials';
 
 // Layout
 @import './layout/navigation';

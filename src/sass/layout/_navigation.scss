@@ -30,7 +30,7 @@
       margin: 5px 0 0 0;
       font-size: 22px;
     }
-    li {
+    .menu-item {
       margin: 0 10px;
       a {
         &:hover {
@@ -54,14 +54,43 @@
       width: 100%;
       left: 0;
       top: 0;
-      ul {
+      .navigation__menu-list {
         @include d-flex-col-center;
         padding: 0;
-        li {
+        .menu-item {
           margin: 10px 0;
           font-size: 40px;
         }
       }
+    }
+  }
+}
+
+.nav-absolute-container {
+  z-index: 500;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  display: flex;
+  flex-direction: row;
+  transition: .30s;
+  a {
+    transition-delay: .30s;
+    transition: .30s;
+    opacity: 0;
+    @media (max-width: 768px) {
+      height: 40px;
+    }
+  }
+  @media (max-width: 768px) {
+    opacity: 0;
+    right: 175px;
+    text-align: center;
+  }
+  &.container-view {
+    opacity: 1;
+    a {
+      opacity: 1;
     }
   }
 }
