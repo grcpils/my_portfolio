@@ -5,14 +5,10 @@ $(document).ready(function() {
 $(window).on("scroll", function() {
   if (window.pageYOffset > $('#header-download').position().top) {
     $('.logo').addClass('minus');
-    setTimeout(function(){
-      $('#nav-download').addClass('button--nav-view');
-    }, 500);
+    $('#nav-download').addClass('button--nav-view');
   } else {
     $('#nav-download').removeClass('button--nav-view');
-    setTimeout(function(){
-      $('.logo').removeClass('minus');
-    }, 500);
+    $('.logo').removeClass('minus');
   }
 });
 

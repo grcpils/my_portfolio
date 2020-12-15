@@ -1,0 +1,141 @@
+.button {
+  @include d-flex-row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  background-color: $color-dark;
+  padding: 5px 50px;
+  font-size: 20px;
+  color: $color-light;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: .20s;
+  &:hover {
+    color: $color-light;
+    text-decoration: none;
+  }
+  @each $key, $value in $colors {
+    &--#{$key} {
+      background-color: $value;
+      @if ( lightness($value) < 60% ) {
+        color: $color-dark;
+      }
+      &:hover {
+        background-color: darken($value, 10%);
+        @if ( lightness($value) < 60% ) {
+          color: $color-dark;
+        }
+      }
+    }
+  }
+  &--show-more {
+    box-shadow: none;
+    @include themify($themes) {
+      background-color: themed(background-accent);
+      color: themed(color)
+    }
+    &:hover {
+      @include themify($themes) {
+        background-color: darken(themed(background-accent), 5%);
+      }
+    }
+  }
+  &--big {
+    padding: 10px 50px;
+    font-size: 25px;
+    width: auto;
+    @media (max-width: 992px) {
+      padding: 10px 30px;
+    }
+  }
+  &--nav {
+    margin: 0 5px;
+    &:first-child {
+      margin: 0 5px 0 0;
+    }
+    &:last-child {
+      margin: 0 0 0 5px;
+    }
+  }
+  &--nav-view {
+    opacity: 1 !important;
+  }
+  &--theme {
+    position: absolute;
+    cursor: pointer;
+    z-index: 150;
+    left: 25px;
+    top: 15px;
+    margin: 0;
+    padding: 10px;
+    &.light {
+      color: $color-light;
+      background-color: $color-dark;
+      &:hover {
+        background-color: lighten($color: $color-dark, $amount: 10%)
+      }
+    }
+    &.dark {
+      color: $color-dark;
+      background-color: $color-light;
+      &:hover {
+        background-color: darken($color: $color-light, $amount: 10%)
+      }
+    }
+    @media (max-width: 768px) {
+      left: auto;
+      right: 75px;
+    }
+  }
+  &--lang {
+    position: absolute;
+    cursor: pointer;
+    z-index: 150;
+    left: 75px;
+    top: 15px;
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    @media (max-width: 768px) {
+      left: auto;
+      right: 125px;
+    }
+    &:hover {
+      background-color: lighten($color: $color-dark, $amount: 10%)
+    }
+  }
+  &--icon {
+    i {
+      margin-right: 10px;
+    }
+  }
+  &--github {
+    background-color: #24292e;
+    color: #f6f8fa;
+    &:hover {
+      background-color: lighten($color: #24292e, $amount: 10%);
+      color: #f6f8fa;
+    }
+  }
+  &--download {
+    background-color: map-get($map: $colors, $key: E);
+    color: #f6f8fa;
+    &:hover {
+      background-color: darken($color:  map-get($map: $colors, $key: E), $amount: 10%);
+      color: #f6f8fa;
+    }
+  }
+  &--padding-minimal {
+    padding: 5px 10px;
+  }
+  &--padding-minimal--xs {
+    @media (max-width: 768px){
+      padding: 5px 10px;
+    }
+  }
+}

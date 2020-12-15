@@ -1,5 +1,6 @@
 .header {
   height: 100vh;
+  min-height: 720px;
   &__container {
     @include d-flex-col-center;
     margin-top: 50%;

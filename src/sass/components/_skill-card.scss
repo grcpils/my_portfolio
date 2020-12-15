@@ -1,0 +1,25 @@
+.skill-card {
+  @include box-shadow;
+  position: relative;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 10px 15px 15px 15px;
+  width: 100%;
+  .skill-header {
+    @include d-flex-row;
+    justify-content: space-between;
+    &__title.circle {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+.skill-container {
+  @include d-flex-row;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    @include d-flex-col;
+    justify-content: start;
+  }
+}

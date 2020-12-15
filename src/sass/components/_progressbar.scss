@@ -18,8 +18,8 @@
     &.perc-40:before {
       width: 40%;
     }
-    &.perc-35:before {
-      width: 35%;
+    &.perc-25:before {
+      width: 25%;
     }
     @each $key, $value in $colors {
       &.color-#{$key} {
