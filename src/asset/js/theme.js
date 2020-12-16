@@ -8,6 +8,7 @@ $('.button--theme').click(function() {
     $('.theme-dark').removeClass('theme-light')
     $(this).removeClass('light')
     $(this).addClass('dark')
+    userTheming = false;
   } else if ($(this).children().hasClass('fa-sun')) {
     $('.fa-sun').addClass('fa-moon')
     $('.fa-moon').removeClass('fa-sun')
