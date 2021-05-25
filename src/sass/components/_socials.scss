@@ -1,65 +1,35 @@
 .socials {
-  display: flex;
-  list-style: none;
-  margin: 0 0 30px;
-  padding: 5px;
-  justify-content: center;
-  font-size: 30px;
-  @include themify($themes) {
-    background-color: themed(background-accent);
-  }
-  border-radius: 10px;
-  &.s-row {
-    flex-direction: row;
-    li {
-      &:first-child {
-        margin: 0 2.5px 0 0;
-      }
-      &:last-child {
-        margin: 0 0 0 2.5px;
-      }
-    }
-  }
-  &.s-col {
-    flex-direction: column;
-    li {
-      margin: 0;
-    }
-  }
-  li {
-    margin: 0 2.5px;
-    padding: 0 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px 0;
+}
+
+.button {
+    padding: 5px;
+    border-radius: 50%;
     width: 50px;
     height: 50px;
-    transition: .30s;
-    border-radius: 10px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    a {
-      @include themify($themes) {
-        color: themed(color);
-      }
-    }
-    &:hover {
-      @include themify($themes) {
-        background-color: themed(background);
-        box-shadow: 0 0 10px themed(box-shadow);
-      }
-      a {
-        @include themify($themes) {
-          color: themed(color);
-        }
-      }
-    }
-  }
-  &.socials-dropdown {
-    z-index: 110;
-    position: fixed;
-    right: 9px;
-    top: 60px;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
     @include themify($themes) {
-      box-shadow: 0 0 10px themed(box-shadow);
+        background-color: themed(background-accent);
+        color: themed(color)
     }
-  }
+    transition: .25s;
+    &:hover {
+        @include themify($themes) {
+            background-color: darken(themed(background-accent), 5%);
+            color: themed(color)
+        }
+    }
+    &--small {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+        line-height: 10px;
+    }
 }
