@@ -1,7 +1,0 @@
-.tooltip-inner {
-  @include themify($themes) {
-    background-color: themed(background-accent) !important;
-    color: themed(color) !important;
-  }
-  @include box-shadow;
-}

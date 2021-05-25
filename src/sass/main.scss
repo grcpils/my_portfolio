@@ -7,25 +7,8 @@
 @import './base/theme';
 
 // Composants
-@import './composants/logo';
-@import './composants/underline';
-@import './composants/button';
-@import './composants/title';
-@import './composants/toggler';
-@import './composants/details';
-@import './composants/language';
-@import './composants/skill-card';
-@import './composants/progressbar';
-@import './composants/timeline';
-@import './composants/project-card';
-@import './composants/modal';
-@import './composants/alert';
-@import './components/tooltip';
+@import './components/card';
+@import './components/socials';
+@import './components/jobs';
 
 // Layout
-@import './layout/navigation';
-@import './layout/header';
-@import './layout/section';
-@import './layout/footer';
-@import './layout/aboutme';
-@import './layout/error-no-script';

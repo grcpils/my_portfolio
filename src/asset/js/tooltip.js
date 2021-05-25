@@ -7,9 +7,7 @@ $(document).ready(function(){
       $('#' + aria).find('.arrow').css({
         "display": "none"
       });
-      $('#' + aria).find('.tooltip-inner').css({
-
-      });
+      $('#' + aria).find('.tooltip-inner').css("color", colorlist[mainRandColor + 1]);
     });
   });
 });
