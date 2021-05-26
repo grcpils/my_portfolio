@@ -40,10 +40,15 @@ $themes: (
   right: 10px;
   top: 10px;
   font-size: 20px;
+  @media (max-width: 576px) {
+    right: 15px;
+    top: 0px;
+    font-size: 30px;
+  }
 }
 
 .toggle-lang {
-  font-family: "Roboto condensed";
+  font-family: "Saira condensed";
   font-weight: 300;
   cursor: pointer;
   position: absolute;
@@ -52,5 +57,9 @@ $themes: (
   text-transform: uppercase;
   @include themify($themes) {
     color: themed(color)
-}
+  }
+  @media (max-width: 576px) {
+    right: 15px;
+    top: 0px;
+  }
 }
