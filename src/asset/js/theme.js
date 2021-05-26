@@ -1,6 +1,9 @@
 let userTheming = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-if (sessionStorage.getItem('theme')) {
+if (sessionStorage.getItem('theme') != undefined) {
+  userTheming = sessionStorage.getItem('theme');
+} else {
+  sessionStorage.setItem('theme', userTheming)
   userTheming = sessionStorage.getItem('theme');
 }
 
@@ -15,7 +18,6 @@ if (userTheming === "true") {
   setTimeout(() => {
     $('.theme-dark').removeClass('no-transition')
   }, 100);
-  sessionStorage.setItem('theme', true);
 } else {
   $('.fa-sun').addClass('fa-moon')
   $('.fa-moon').removeClass('fa-sun')
@@ -25,7 +27,6 @@ if (userTheming === "true") {
   setTimeout(() => {
     $('.theme-light').removeClass('no-transition')
   }, 100);
-  sessionStorage.setItem('theme', false);
 }
 
 const colorlist = [
