@@ -21,5 +21,45 @@ $themes: (
   .theme-#{$key} {
     color: map-get($map: $value, $key: color);
     background-color: map-get($map: $value, $key: background);
+    transition: .40s;
+    .tooltip-inner {
+      background-color: map-get($map: $value, $key: background-accent);
+      color: map-get($map: $value, $key: color);
+      font-weight: 700;
+    }
+  }
+}
+
+.no-transition {
+  transition: 0s;
+}
+
+.toggle-theme {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  @media (max-width: 576px) {
+    right: 15px;
+    top: 0px;
+    font-size: 30px;
+  }
+}
+
+.toggle-lang {
+  font-family: "Saira condensed";
+  font-weight: 300;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  text-transform: uppercase;
+  @include themify($themes) {
+    color: themed(color)
+  }
+  @media (max-width: 576px) {
+    right: 15px;
+    top: 0px;
   }
 }
