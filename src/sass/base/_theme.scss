@@ -63,3 +63,17 @@ $themes: (
     top: 0px;
   }
 }
+
+.download-resume {
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 45px;
+  @include themify($themes) {
+    color: themed(color)
+  }
+  @media (max-width: 576px) {
+    right: 15px;
+    top: 45px;
+  }
+}
